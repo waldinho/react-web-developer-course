@@ -1,1 +1,3 @@
-# react-web-developer-course: Started 21.2.2018 
+# react-web-developer-course
+
+Started 21.2.2018
