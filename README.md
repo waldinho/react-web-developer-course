@@ -1,3 +1,3 @@
-# react-web-developer-course
+# React web developer course
 
 Started 21.2.2018
