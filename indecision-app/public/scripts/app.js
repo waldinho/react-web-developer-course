@@ -119,19 +119,9 @@ var Header = function Header(props) {
 
 Header.defaultProps = {
     title: 'Indecision'
+};
 
-    // class Header extends React.Component {
-    //     render() {
-    //         return (
-    //             <div>
-    //                 <h1>{this.props.title}</h1>
-    //                 <h2>{this.props.subtitle}</h2>
-    //             </div>
-    //         )
-    //     }
-    // }
-
-};var Action = function Action(props) {
+var Action = function Action(props) {
     return React.createElement(
         'div',
         null,
@@ -145,18 +135,6 @@ Header.defaultProps = {
         )
     );
 };
-
-// class Action extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <button 
-//                 onClick={this.props.handlePick} 
-//                 disabled={!this.props.hasOptions}> {this.props.buttonText}</button>
-//             </div>
-//         )
-//     }
-// }
 
 var Options = function Options(props) {
     return React.createElement(
@@ -178,20 +156,6 @@ var Options = function Options(props) {
     );
 };
 
-// class Options extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <Option />
-//                 <button onClick={this.props.handleDeleteOptions}>{this.props.buttonText}</button>
-//                 {
-//                     this.props.options.map((option) => <Option key={option} optionText={option}/>)
-//                 }
-//             </div>
-//         )
-//     }
-// }
-
 var Option = function Option(props) {
     return React.createElement(
         'div',
@@ -211,16 +175,6 @@ var Option = function Option(props) {
         )
     );
 };
-
-// class Option extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <p>{this.props.optionText}</p>
-//             </div>
-//         )
-//     }
-// }
 
 var AddOption = function (_React$Component2) {
     _inherits(AddOption, _React$Component2);
@@ -277,14 +231,5 @@ var AddOption = function (_React$Component2) {
 
     return AddOption;
 }(React.Component);
-
-// const User = (props) => {
-//     return (
-//         <div>
-//             <p>Name: {props.name}</p>
-//             <p>Age: {props.age}</p>
-//         </div>
-//     )
-// }
 
 ReactDOM.render(React.createElement(IndecisionApp, null), document.getElementById('app'));

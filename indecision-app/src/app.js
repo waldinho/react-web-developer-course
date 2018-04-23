@@ -75,17 +75,6 @@ Header.defaultProps = {
     title: 'Indecision'
 }
 
-// class Header extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <h1>{this.props.title}</h1>
-//                 <h2>{this.props.subtitle}</h2>
-//             </div>
-//         )
-//     }
-// }
-
 const Action = (props) => {
     return (
         <div>
@@ -95,18 +84,6 @@ const Action = (props) => {
         </div>
     )
 }
-
-// class Action extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <button 
-//                 onClick={this.props.handlePick} 
-//                 disabled={!this.props.hasOptions}> {this.props.buttonText}</button>
-//             </div>
-//         )
-//     }
-// }
 
 const Options = (props) => {
     return (
@@ -124,20 +101,6 @@ const Options = (props) => {
     )
 }
 
-// class Options extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <Option />
-//                 <button onClick={this.props.handleDeleteOptions}>{this.props.buttonText}</button>
-//                 {
-//                     this.props.options.map((option) => <Option key={option} optionText={option}/>)
-//                 }
-//             </div>
-//         )
-//     }
-// }
-
 const Option = (props) => {
     return (
         <div>
@@ -150,16 +113,6 @@ const Option = (props) => {
         </div>
     )
 }
-
-// class Option extends React.Component {
-//     render() {
-//         return (
-//             <div>
-//                 <p>{this.props.optionText}</p>
-//             </div>
-//         )
-//     }
-// }
 
 class AddOption extends React.Component {
     constructor(props) {
@@ -190,14 +143,5 @@ class AddOption extends React.Component {
         )
     }
 }
-
-// const User = (props) => {
-//     return (
-//         <div>
-//             <p>Name: {props.name}</p>
-//             <p>Age: {props.age}</p>
-//         </div>
-//     )
-// }
 
 ReactDOM.render(<IndecisionApp />, document.getElementById('app'))
